@@ -1,0 +1,10 @@
+ul li {
+  margin-bottom: 10px;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}

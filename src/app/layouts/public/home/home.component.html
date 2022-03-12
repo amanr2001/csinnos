@@ -1,0 +1,183 @@
+<!-- header -->
+<div class="w-full h-full relative overflow-hidden">
+    <div id="carouselExampleControls" class="carousel slide h-full" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div *ngFor="let img of imagesUrl; let i = index;" class="carousel-item"
+                [ngClass]="(i === 1) ? 'active' : ''">
+                <img [src]="img" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="absolute top-0 left-0 w-full h-full bg-black/50">
+        <div class="absolute sm:w-full lg:w-1/2 top-0 translate-x-1/2 translate-y-1/2 text-center">
+            <div class="flex flex-row justify-center mb-8">
+                <img class="w-72" src="./../../../../assets/images/logo/logo.png">
+            </div>
+            <div class="text-white uppercase font-bold text-8xl mb-6 quicksand-700">
+                C&nbsp;S Innovations
+            </div>
+            <span class="text-white text-2xl capitalize poppins-400">have engineering your way</span>
+            <div class="flex flex-row justify-center mt-28">
+                <span class="scroll-icon">
+                    <span class="scroll-icon__wheel-outer">
+                        <span class="scroll-icon__wheel-inner"></span>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="absolute top-0 w-full opacity-80">
+            <img src="./../../../../assets/images/skyline.png">
+        </div>
+    </div>
+</div>
+
+<!-- Insight -->
+<div class="flex flex-row justify-center w-full bg-theme-blue text-white text-center p-28">
+    <div class="w-full lg:w-1/2 lg:max-w-1/2">
+        <div class="text-6xl mb-14 poppins-600 uppercase">Insight</div>
+        <div class="flex flex-row justify-center">
+            <p class="w-full text-xl leading-8 poppins-400">
+                C S Innovations is an engineering consulting company focused on product development, custom
+                machinery design
+                and
+                manufacturing. Providing satisfying, fluid, cost-effective collaborative design experiences for our
+                global
+                clientele is
+                our primary focus. We provide professional expertise to see every project evolve from concept to
+                prototyping
+                to
+                the
+                final production.Our strength lies in the hands of our expert team members, each specialized in
+                different
+                sectors.
+                Throughout the process we maintain a transparent relationship with our clients ensuring the final
+                product is
+                fully
+                compliant and delivered on time. Our team works efficiently and effectively using the latest
+                technologies to
+                turn your
+                idea into a reality.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Clients -->
+<div class="flex flex-row justify-center w-full p-28">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="mb-14 text-center">
+            <div class="text-6xl poppins-700 uppercase mb-5">Clients</div>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-12 items-center">
+            <img src="./../../../../assets/images/clients/hela.jpeg" alt="Hela">
+            <img src="./../../../../assets/images/clients/dsi.jpeg" alt="DSI">
+            <img src="./../../../../assets/images/clients/fits-retail.jpeg" alt="Fits Retail">
+            <img src="./../../../../assets/images/clients/m.jpeg" alt="M">
+            <img src="./../../../../assets/images/clients/sanaka.jpeg" alt="Sanaka Group">
+            <img src="./../../../../assets/images/clients/expo.jpeg" alt="Expo">
+        </div>
+    </div>
+</div>
+
+<!-- Testimonials -->
+<div class="flex flex-row justify-center w-full p-28">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="mb-14 text-center">
+            <div class="text-6xl poppins-700 uppercase mb-5">Testimonials</div>
+            <span class="text-2xl">— Don't Take Our Word for It —</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+            <div class="p-6 rounded-xl poppins-400" *ngFor="let tstml of testimonials" [ngClass]="tstml.colors">
+                <div>
+                    <mat-icon class="text-7xl opacity-50">format_quote</mat-icon>
+                </div>
+                <div class="mb-5">{{tstml.description}}</div>
+                <div class="poppins-600">{{tstml.name}}</div>
+                <div class="opacity-60">{{tstml.country}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Works -->
+<div class="flex flex-row justify-center w-full p-28 bg-gray-100">
+    <div class="w-full lg:w-3/4 lg:max-w-3/4">
+        <div class="mb-14 text-center">
+            <div class="text-6xl poppins-700 uppercase mb-14">Services</div>
+        </div>
+
+        <div class="flex flex-wrap justify-center mb-12">
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    Product Design, Prototype & Manufacture
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    3D Printing Solutions
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    3D Modeling & Drawing
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    Existing Product Modification
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    CNC Machine & Machine Fabrication
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    Plastic Injection Moduling
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    Electrical System Design & PCB Printing
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(https://wallpaperaccess.com/full/1536630.jpg)">
+                <div
+                    class="flex items-center w-80 h-80 bg-blue-600/60 opacity-1 transition duration-300 cursor-pointer p-5 text-xl text-white text-center poppins-500">
+                    Compliance Documentation
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#" mat-stroked-button class="flex flex-row items-center justify-center font-blue poppins-600">
+                Our Services<mat-icon class=" ml-3">trending_flat</mat-icon>
+            </a>
+        </div>
+    </div>
+</div>

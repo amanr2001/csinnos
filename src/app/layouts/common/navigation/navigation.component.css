@@ -1,0 +1,9 @@
+#nav-menu-lg a {
+  margin-right: 3.5em;
+}
+#nav-menu-lg a:last-child {
+  margin-right: 0;
+}
+#nav-menu-lg a:hover {
+  color: var(--light-blue);
+}

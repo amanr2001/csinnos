@@ -1,0 +1,20 @@
+<div class="fixed bg-theme-black top-0 w-full px-28 py-4 z-50 navbar">
+    <div class="flex flex-row items-center justify-center w-full">
+        <div class="flex flex-row items-center poppins-400 text-white" id="nav-menu-lg">
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'/'"><img
+                    class="w-10 transition duration-300" src="../../../../assets/images/logo/logo.png"></a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'store'">Store</a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'services'">Services</a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'outsource'">Outsource</a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'careers'">Careers</a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'about'">About</a>
+            <a class="hover:underline hover:underline-offset-8" [routerLink]="'contact'">Contact Us</a>
+            <a [routerLink]="'cart'" class="flex flex-row items-center justify-center text-white">
+                <mat-icon matBadge="5" matBadgeColor="warn">shopping_cart</mat-icon>
+            </a>
+            <a href="#" mat-stroked-button class="flex flex-row items-center justify-center text-white poppins-400">
+                <mat-icon class=" mr-3">account_circle</mat-icon>Log In
+            </a>
+        </div>
+    </div>
+</div>

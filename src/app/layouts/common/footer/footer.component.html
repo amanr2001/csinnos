@@ -1,0 +1,64 @@
+<div class="flex flex-row justify-center px-28 p-6 bg-theme-black">
+    <div class="w-full lg:w-1/2 lg:max-w-1/2">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-16 py-4 text-sm">
+            <div>
+                <div class="text-gray-500 poppins-600 mb-4 uppercase">Site Links</div>
+                <div class="text-gray-300 poppins-400">
+                    <ul>
+                        <li><a [routerLink]="'store'">Store</a></li>
+                        <li><a [routerLink]="'services'">Services</a></li>
+                        <li><a [routerLink]="'outsource'">Outsource</a></li>
+                        <li><a [routerLink]="'careers'">Careers</a></li>
+                        <li><a [routerLink]="'about'">About</a></li>
+                        <li><a [routerLink]="'contact'">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="text-gray-500 poppins-600 mb-4 uppercase">Services</div>
+                <div class="text-gray-300 poppins-400">
+                    <ul>
+                        <li>Product Design, Prototype & Manufacture</li>
+                        <li>3D Printing Solutions</li>
+                        <li>3D Modeling & Drawing</li>
+                        <li>Existing Product Modification</li>
+                        <li>CNC Machine & Machine Fabrication</li>
+                        <li>Plastic Injection Moduling</li>
+                        <li>Electrical System Design & PCB Printing</li>
+                        <li>Compliance Documentation</li>
+                        <li>Sustainable Packaging</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="text-gray-500 poppins-600 mb-4 uppercase">Important Links</div>
+                <div class="text-gray-300 poppins-400">
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a [routerLink]="'cart'">Products Cart</a></li>
+                        <li><a [routerLink]="'insta-feed'">Instagram Feed</a></li>
+                    </ul>
+                </div>
+                <div class="absolute bottom-0 text-gray-400">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-linkedin fa-2xl mr-4"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram-square fa-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t w-full border-gray-700 my-4"></div>
+        <div class="flex flex-row items-center justify-between">
+            <div class="text-sm text-gray-500 poppins-500">
+                Copyright &#169; {{currentYear}} <span class="uppercase">C S Innovations (Pvt) Ltd.</span> All rights
+                reserved.
+            </div>
+            <div class="poppins-500 text-gray-300 text-sm uppercase">
+                <a href="#">Terms and Conditions</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</div>
