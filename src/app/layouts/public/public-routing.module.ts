@@ -20,7 +20,7 @@ const publicRoutes: Routes = [
   { path: 'about', component: AboutUsComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'cart', component: ShoppingCartComponent },
-  { path: 'insta-feed', component: SocialMediaComponent },
+  { path: 'testimonials', component: SocialMediaComponent },
 ];
 
 @NgModule({

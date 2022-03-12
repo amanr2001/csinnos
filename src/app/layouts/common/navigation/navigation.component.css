@@ -7,3 +7,12 @@
 #nav-menu-lg a:hover {
   color: var(--light-blue);
 }
+#nav-menu-lg a.active{
+  color: var(--light-blue);
+  text-decoration: underline;
+  text-underline-offset: .65em;
+}
+#nav-menu-sm a.active > div{
+  border-left: 10px solid var(--blue);
+  border-right: 10px solid var(--blue);
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -7,18 +8,31 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  isMobileMenuOpen: boolean = false;
+
+  constructor(private router: Router) { }
 
   @HostListener('window:scroll') onWindowScroll(): void {
-    let element = document.querySelector('.navbar') as HTMLElement;
+    let element = document.querySelector('.mobile-navbar') as HTMLElement;
     if (window.pageYOffset > element.clientHeight) {
-      element.classList.add('shadow-md');
+      element.classList.add('bg-theme-black');
     } else {
-      element.classList.remove('shadow-md');
+      element.classList.remove('bg-theme-black');
     }
   }
 
   ngOnInit(): void {
+    this.isMobileMenuOpen = false;
+  }
+
+  openMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
+
+  navigationItemClick(location: string) {
+    this.router.navigateByUrl(location).then(() => {
+      window.location.reload();
+    });
   }
 
 }

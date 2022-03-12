@@ -11,10 +11,10 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     PublicModule,
@@ -27,7 +27,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatBadgeModule,
     MdbCarouselModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatMenuModule
   ],
   exports: [
     CommonModule,
@@ -41,8 +42,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatBadgeModule,
     MdbCarouselModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatMenuModule
   ],
+  declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule { }

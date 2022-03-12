@@ -1,2 +1,32 @@
-<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered
-        by Curator.io</a></div>
+<!-- Testimonials -->
+<div class="flex flex-row justify-center w-full p-7 lg:py-28">
+        <div class="w-full lg:w-2/3 lg:max-w-2/3">
+                <div class="mb-14 text-center">
+                        <div class="text-5xl poppins-700 uppercase mb-5">Testimonials</div>
+                        <span class="text-xl">— Don't Take Our Word for It —</span>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
+                        <div class="p-6 rounded-xl poppins-400" *ngFor="let tstml of testimonials"
+                                [ngClass]="tstml.colors">
+                                <div>
+                                        <mat-icon class="text-7xl opacity-50">format_quote</mat-icon>
+                                </div>
+                                <div class="mb-5">{{tstml.description}}</div>
+                                <div class="poppins-600">{{tstml.name}}</div>
+                                <div class="opacity-60">{{tstml.country}}</div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- Instagram Feed -->
+<div class="flex flex-row justify-center w-full p-7 lg:py-28 bg-gray-100">
+        <div class="w-full lg:w-2/3 lg:max-w-2/3">
+                <div class="mb-14 text-center">
+                        <div class="text-5xl poppins-700 uppercase mb-5">Instagram Feed</div>
+                        <span class="text-xl">— See what we have done so far —</span>
+                </div>
+                <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered
+                                by Curator.io</a></div>
+        </div>
+</div>

@@ -20,6 +20,7 @@ import { OurServicesComponent } from './our-services/our-services.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatButtonModule,
     MatTooltipModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatMenuModule
   ]
 })
 export class PublicModule { }
