@@ -21,6 +21,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
+import { MagazineComponent } from './magazine/magazine.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatMenuModule } from '@angular/material/menu';
     CareersComponent,
     AboutUsComponent,
     OurServicesComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    MagazineComponent
   ],
   imports: [
     CommonModule,

@@ -1,19 +1,19 @@
-<div class="fixed bg-theme-black top-0 w-full px-28 py-3 z-50 navbar hidden sm:inline-flex">
+<div class="fixed bg-white top-0 w-full px-28 py-3 z-50 lg-navbar hidden sm:inline-flex">
     <div class="flex flex-row items-center justify-center w-full">
-        <div class="flex flex-row items-center poppins-400 text-white text-xs" id="nav-menu-lg">
-            <a class="hover:underline hover:underline-offset-8" [routerLink]="'/'">
+        <div class="flex flex-row items-center poppins-400 text-black text-xs" id="nav-menu-lg">
+            <a class="hover:underline hover:underline-offset-8" routerLink="services" routerLinkActive="active" (click)="navigationItemClick('services')">Services</a>
+            <a class="hover:underline hover:underline-offset-8" routerLink="outsource" routerLinkActive="active" (click)="navigationItemClick('outsource')">Outsource</a>
+            <a class="hover:underline hover:underline-offset-8" routerLink="about" routerLinkActive="active" (click)="navigationItemClick('about')">About</a>
+            <a class="hover:underline hover:underline-offset-8" routerLink="/" (click)="navigationItemClick('/')">
                 <img class="w-6" src="../../../../assets/images/logo/logo.png">
             </a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="services" routerLinkActive="active">Services</a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="outsource" routerLinkActive="active">Outsource</a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="about" routerLinkActive="active">About</a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="contact" routerLinkActive="active">Contact Us</a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="careers" routerLinkActive="active">Careers</a>
-            <a class="hover:underline hover:underline-offset-8" routerLink="store" routerLinkActive="active">Store</a>
-            <!-- <a [routerLink]="'cart'" class="flex flex-row items-center justify-center text-white text-xs">
+            <a class="hover:underline hover:underline-offset-8" routerLink="contact" routerLinkActive="active" (click)="navigationItemClick('contact')">Contact Us</a>
+            <a class="hover:underline hover:underline-offset-8" routerLink="careers" routerLinkActive="active" (click)="navigationItemClick('careers')">Careers</a>
+            <a class="hover:underline hover:underline-offset-8" routerLink="store" routerLinkActive="active" (click)="navigationItemClick('store')">Store</a>
+            <!-- <a routerLink="cart" routerLinkActive="active" (click)="navigationItemClick('cart')" class="flex flex-row items-center justify-center text-white text-xs">
                 <mat-icon matBadge="5" matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>
             </a>
-            <a href="#" class="flex flex-row items-center justify-center text-white poppins-400 text-xs">
+            <a routerLink="login" routerLinkActive="active" (click)="navigationItemClick('login')" class="flex flex-row items-center justify-center text-white poppins-400 text-xs">
                 <mat-icon class=" mr-3">account_circle</mat-icon>Log In
             </a> -->
         </div>
@@ -22,12 +22,12 @@
 
 <!-- Actions menu (visible on xs) -->
 <div class="sm:hidden fixed top-0 w-full z-50">
-    <div class="flex flex-row items-center justify-between px-4 py-3 mobile-navbar transition duration-300">
-        <a [routerLink]="'/'" (click)="navigationItemClick('/')">
+    <div class="flex flex-row items-center justify-between px-4 py-3 sm-navbar transition duration-300">
+        <a routerLink="/" (click)="navigationItemClick('/')">
             <img class="w-11" src="../../../../assets/images/logo/logo.png">
         </a>
         <button mat-icon-button (click)="openMobileMenu()">
-            <mat-icon class="text-white text-3xl" aria-hidden="false">{{(isMobileMenuOpen) ? 'close' : 'menu'}}</mat-icon>
+            <mat-icon id="sm-menu-icon" class="text-white text-3xl" aria-hidden="false">{{(isMobileMenuOpen) ? 'close' : 'menu'}}</mat-icon>
         </button>
     </div>
     <div *ngIf="isMobileMenuOpen" class="w-screen h-screen bg-black/75 py-16 uppercase transition duration-300" id="nav-menu-sm">
@@ -38,12 +38,4 @@
         <a class="text-white text-2xl poppins-600" mat-menu-item routerLink="careers" routerLinkActive="active" (click)="navigationItemClick('careers')"><div class="py-2 my-3 text-center">Careers</div></a>
         <a class="text-white text-2xl poppins-600" mat-menu-item routerLink="store" routerLinkActive="active" (click)="navigationItemClick('store')"><div class="py-2 my-3 text-center">Store</div></a>
     </div>
-    <!-- <mat-menu #actionsMenu="matMenu" class="w-screen">
-        
-        <a mat-menu-item routerLink="outsource" routerLinkActive="active">Outsource</a>
-        <a mat-menu-item routerLink="about" routerLinkActive="active">About</a>
-        <a mat-menu-item routerLink="contact" routerLinkActive="active">Contact Us</a>
-        <a mat-menu-item routerLink="careers" routerLinkActive="active">Careers</a>
-        <a mat-menu-item routerLink="store" routerLinkActive="active">Store</a>
-    </mat-menu> -->
 </div>

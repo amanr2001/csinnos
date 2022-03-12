@@ -1,1 +1,74 @@
-<p>outsource works!</p>
+<div class="w-full h-2/5 bg-cover bg-no-repeat bg-center"
+    style="background-image: url(./../../../../assets/images/common-bg.jpeg)">
+    <div class="relative top-0 left-0 w-full h-full bg-black/50">
+        <div class="absolute w-full top-1/2 text-center">
+            <div
+                class="text-white uppercase font-bold text-4xl lg:text-5xl mb-6 quicksand-700 text-center tracking-wide">
+                Outsourcing
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row justify-center bg-gray-100 px-7 py-20">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-x-12">
+            <div class="bg-white uppercase text-center rounded-2xl shadow-md p-4">
+                <div class="text-xl poppins-600 font-blue">are you looking for a reliable outsourcing partnership?</div>
+                <div class="w-full border-t my-3"></div>
+                <div class="poppins-400 mt-4">
+                    <p>reduce rising engineering costs</p>
+                    <p>increase efficiency of your company</p>
+                    <p>reduce margin pressures</p>
+                    <p>increase employee satisfaction</p>
+                </div>
+            </div>
+            <div class="bg-white uppercase text-center rounded-2xl shadow-md p-4">
+                <div class="text-xl poppins-600 font-blue">why us?</div>
+                <div class="w-full border-t my-3"></div>
+                <div class="poppins-400 mt-4">
+                    <p>confidentiality</p>
+                    <p>skilled engineers</p>
+                    <p>authorised software licences</p>
+                    <p>regular updates of progress</p>
+                    <p>on-time delivery</p>
+                    <p>due diligence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row justify-center text-center bg-light-blue px-7 py-20">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="uppercase text-4xl poppins-700 mb-4 font-blue">Our service</div>
+        <div class="poppins-400 leading-7 normal-case">
+            From concept development to simply collaborative guidance & consultation, C S Innovations is available to
+            help. To that end, we have carefully tailormade a group of different packages for all your outsourcing
+            needs, that we believe will satisfy any of your project requirements.
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row justify-center text-center px-7 py-20">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="uppercase text-4xl poppins-700 mb-5">What we offer?</div>
+        <div>
+            <img src="./../../../../assets/images/outsource.jpeg">
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row justify-center text-center bg-gray-100 px-7 py-20">
+    <div class="w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="uppercase text-4xl poppins-700 mb-5">Packages</div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 justify-items-center">
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden" *ngFor="let package of packages">
+                <div class="uppercase p-3 bg-theme-blue text-white text-lg poppins-600">{{package.title}}</div>
+                <div class="px-3 py-4 leading-6 poppins-400">
+                    {{package.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
