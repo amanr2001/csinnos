@@ -22,6 +22,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
 import { MagazineComponent } from './magazine/magazine.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { MagazineComponent } from './magazine/magazine.component';
     MatTooltipModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatMenuModule
+    MatMenuModule,
+    PdfViewerModule
   ]
 })
 export class PublicModule { }

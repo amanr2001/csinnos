@@ -1,1 +1,20 @@
-<p>magazine works!</p>
+<div class="w-full h-2/5 bg-cover bg-no-repeat bg-center"
+    style="background-image: url(./../../../../assets/images/common-bg.jpeg)">
+    <div class="relative top-0 left-0 w-full h-full bg-black/50">
+        <div class="absolute w-full top-1/2 text-center">
+            <div
+                class="text-white uppercase font-bold text-4xl lg:text-5xl mb-6 quicksand-700 text-center tracking-wide">
+                Magazine
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex flex-row justify-center bg-gray-100">
+    <div class="px-3 py-8 lg:px-7 lg:py-14 w-full lg:w-2/3 lg:max-w-2/3">
+        <pdf-viewer 
+        [src]="'./../../../../assets/magazine/PDF_compressed.pdf'"
+        [fit-to-page]="true"
+        [zoom]="1"
+        class="w-full h-screen border rounded-xl overflow-hidden"></pdf-viewer>
+    </div>
+</div>

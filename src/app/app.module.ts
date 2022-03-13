@@ -22,7 +22,7 @@ import { PublicRoutingModule } from './layouts/public/public-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    PublicRoutingModule,
+    PublicRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,6 +12,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MdbCarouselModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatMenuModule
+    MatMenuModule,
+    PdfViewerModule
   ],
   exports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MdbCarouselModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatMenuModule
+    MatMenuModule,
+    PdfViewerModule
   ],
   declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
