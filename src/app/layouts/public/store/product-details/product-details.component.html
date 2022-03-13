@@ -1,0 +1,38 @@
+<div class="flex flex-row items-center justify-center bg-gray-100">
+    <div class="px-7 py-20  w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="my-6 poppins-300 text-2xl">Product details</div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4" *ngFor="let product of selectedProduct">
+            <div class="border">
+                <img [src]="product.productImg" [alt]="product.name + ' image'">
+            </div>
+            <div class="relative">
+                <div class="text-xl poppins-600 mb-2">{{product.name}}</div>
+                <div class="text-md text-gray-500 poppins-400 mb-2">{{'$'+thousandSeperator(product.price.toFixed(2))}}</div>
+                <div class="border-t">
+                    <div class="my-3"><span class="text-xs text-gray-600 bg-light-blue px-2 py-1 rounded-lg">Category: {{product.category}}</span></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <mat-form-field appearance="outline" class="w-full lg:w-2/3">
+                            <mat-label>Quantity</mat-label>
+                            <input matInput type="number" name="quantity" [value]="quantity" #prodQuantity (input)="calculateTotal(prodQuantity.value)">
+                        </mat-form-field>
+                        <div class="text-right">
+                            <span class="text-lg text-gray-500">Total</span> 
+                            <div class="text-2xl poppins-500">${{thousandSeperator(totalPrice?.toFixed(2))}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="poppins-500 text-gray-600">Description:</span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid consectetur alias rem optio, adipisci nisi vero libero impedit. Praesentium, nisi. Beatae eaque deserunt quisquam. Earum commodi neque id at!
+                    </p>
+                </div>
+                <div class="mt-8 text-center w-full">
+                    <button class="text-white poppins-500 px-12 py-3 w-full rounded-md bg-theme-blue hover:bg-black transition">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,8 +2,58 @@
     style="background-image: url(./../../../../assets/images/common-bg.jpeg)">
     <div class="relative top-0 left-0 w-full h-full bg-black/50">
         <div class="absolute w-full top-1/2 text-center">
-            <div class="text-white uppercase font-bold text-xl lg:text-5xl mb-6 quicksand-700 text-center tracking-wide">
+            <div
+                class="text-white uppercase font-bold text-xl lg:text-5xl mb-6 quicksand-700 text-center tracking-wide">
                 Store
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-row items-center justify-center bg-gray-100">
+    <div class="px-7 py-20 w-full lg:w-2/3 lg:max-w-2/3">
+        <div class="block lg:flex flex-row">
+            <div class="mb-4 w-full lg:w-1/5">
+                <div class="poppins-600 text-gray-500 mb-3">Filter by:</div>
+                <mat-form-field appearance="outline" class="w-full text-sm">
+                    <mat-label>Category</mat-label>
+                    <mat-select [value]="'all'">
+                        <mat-option value="all">All (default)</mat-option>
+                        <mat-option *ngFor="let category of categories" [value]="category.id">
+                            {{category.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="w-full text-sm">
+                    <mat-label>Sort by</mat-label>
+                    <mat-select [value]="'default'">
+                        <mat-option value="default">Latest (default)</mat-option>
+                        <mat-option value="L-H">Price (low to high)</mat-option>
+                        <mat-option value="H-L">Price (high to low)</mat-option>
+                        <mat-option value="A-Z">Name (A - Z)</mat-option>
+                        <mat-option value="Z-A">Name (Z - A)</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="w-full lg:w-4/5 lg:ml-5">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-5">
+                    <div class="product-link" *ngFor="let item of productsList; let i = index;">
+                        <div class="rounded-lg shadow-sm overflow-hidden">
+                            <div class="relative w-full overflow-hidden">
+                                <img class="product-img transition" [src]="item.productImg">
+                                <div class="absolute inset-0 bg-blue-700/75 text-black transition overlay-area">
+                                    <div (click)="openQuickView(i)" class="w-1/2 absolute top-1/2 translate-x-1/2 -translate-y-1/2 text-center text-xs poppins-400 hover:font-semibold bg-white rounded-lg p-2 cursor-pointer">
+                                        Quick&nbsp;View
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="poppins-400 p-2 bg-black/75 text-white text-xs text-center">
+                                <div>{{shorterFileName(item.name, 25)}}</div>
+                                <div class="text-gray-300 mt-1">{{'$'+thousandSeperator(item.price.toFixed(2))}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

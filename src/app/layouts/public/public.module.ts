@@ -23,6 +23,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
 import { MagazineComponent } from './magazine/magazine.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ProductQuickViewComponent } from './store/product-quick-view/product-quick-view.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ProductDetailsComponent } from './store/product-details/product-details.component';
 
 
 @NgModule({
@@ -36,7 +39,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     AboutUsComponent,
     OurServicesComponent,
     ShoppingCartComponent,
-    MagazineComponent
+    MagazineComponent,
+    ProductQuickViewComponent,
+    ProductDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -52,7 +57,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatDatepickerModule,
     MatNativeDateModule,
     MatMenuModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatDialogModule
   ]
 })
 export class PublicModule { }

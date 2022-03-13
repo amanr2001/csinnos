@@ -13,6 +13,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatDatepickerModule,
     MatNativeDateModule,
     MatMenuModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatDialogModule
   ],
   exports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatDatepickerModule,
     MatNativeDateModule,
     MatMenuModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatDialogModule
   ],
   declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

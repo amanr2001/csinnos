@@ -1,0 +1,10 @@
+.overlay-area {
+    opacity: 0;
+}
+
+.product-link:hover .overlay-area {
+    opacity: 1;
+}
+.product-link:hover .product-img {
+    transform: scale(1.2);
+}

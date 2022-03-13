@@ -9,11 +9,13 @@ import { OurServicesComponent } from './our-services/our-services.component';
 import { OutsourceComponent } from './outsource/outsource.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { ProductDetailsComponent } from './store/product-details/product-details.component';
 import { StoreComponent } from './store/store.component';
 
 const publicRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'store', component: StoreComponent },
+  { path: 'store/product/:id', component: ProductDetailsComponent },
   { path: 'services', component: OurServicesComponent },
   { path: 'outsource', component: OutsourceComponent },
   { path: 'outsource', component: OutsourceComponent },
