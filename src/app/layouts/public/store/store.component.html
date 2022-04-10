@@ -40,7 +40,7 @@
                     <div class="product-link" *ngFor="let item of productsList; let i = index;">
                         <div class="rounded-lg shadow-sm overflow-hidden">
                             <div class="relative w-full overflow-hidden">
-                                <img class="product-img transition" [src]="item.productImg">
+                                <img class="product-img transition h-60 object-center object-cover" [src]="item.productImg">
                                 <div class="absolute inset-0 bg-blue-700/75 text-black transition overlay-area">
                                     <div (click)="openQuickView(i)" class="w-1/2 absolute top-1/2 translate-x-1/2 -translate-y-1/2 text-center text-xs poppins-400 hover:font-semibold bg-white rounded-lg p-2 cursor-pointer">
                                         Quick&nbsp;View

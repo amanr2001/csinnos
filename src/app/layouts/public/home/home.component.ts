@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
 
   imagesUrl = [
     "./../../../../assets/images/slider-img-1.jpg",
-    "./../../../../assets/images/slider-img-2.jpeg"
+    "./../../../../assets/images/slider-img-2.jpeg",
   ]
 
   constructor() { }

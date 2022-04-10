@@ -25,8 +25,8 @@
                 <div class="text-lg poppins-500">Total: {{'$'+thousandSeperator(totalPrice?.toFixed(2))}}</div>
             </div>
             <div class="text-center">
-                <button class="text-white poppins-500 px-12 py-3 w-full rounded-md bg-theme-blue hover:bg-black transition mb-3">
-                    Add to cart
+                <button class="flex flex-row items-center justify-center text-white poppins-500 px-12 py-3 w-full rounded-md bg-theme-blue hover:bg-black transition mb-3">
+                    <mat-icon class="mr-2">add_shopping_cart</mat-icon>Add to cart
                 </button>
                 <a [routerLink]="['/store/product', data.id]" (click)="onClose()" class="font-blue">View more details&nbsp;&#8599;</a>
             </div>

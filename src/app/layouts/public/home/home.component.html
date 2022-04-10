@@ -1,6 +1,6 @@
 <!-- header -->
 <div class="w-full h-full relative overflow-hidden" id="header-content">
-    <div id="carouselExampleControls" class="carousel slide h-full hidden sm:inline-flex" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide w-full h-full hidden sm:inline-flex" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div *ngFor="let img of imagesUrl; let i = index;" class="carousel-item"
                 [ngClass]="(i === 1) ? 'active' : ''">
@@ -32,16 +32,16 @@
                 </span>
             </div>
         </div>
-        <div class="absolute bottom-0 w-full opacity-80 lg:opacity-60">
+        <div class="absolute bottom-0 w-full opacity-80 lg:opacity-50">
             <img src="./../../../../assets/images/skyline.png">
         </div>
     </div>
 </div>
 
 <!-- Insight -->
-<div class="flex flex-row justify-center w-full bg-theme-blue text-white text-center px-7 py-16 lg:py-28">
+<div class="flex flex-row justify-center w-full bg-white text-center px-7 py-16 lg:py-28">
     <div class="w-full lg:w-2/3 lg:max-w-2/3">
-        <div class="text-5xl mb-14 poppins-600 uppercase">Insight</div>
+        <div class="text-5xl mb-14 poppins-700 uppercase">Insight</div>
         <div class="flex flex-row justify-center">
             <p class="w-full text-md leading-7 lg:text-lg lg:leading-8 poppins-400">
                 C S Innovations is an engineering consulting company focused on product development, custom
@@ -80,63 +80,64 @@
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
                 style="background-image: url(./../../../../assets/images/services/product-prototyping.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    Product Design, Prototype & Manufacture
-                </div>
-            </div>
-            <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
-                style="background-image: url(./../../../../assets/images/services/3d-printing.jpeg)">
-                <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    3D Printing Solutions
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    Automated Machinery Design & Manufacturing
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
                 style="background-image: url(./../../../../assets/images/services/3d-drawing.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    3D Modeling & Drawing
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    CAD/CAM Designing & Simulations
+                    <!-- (3D Modeling/ Technical Drawing/ Fea & Motion Simulations) -->
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
-                style="background-image: url(./../../../../assets/images/services/product-modification.jpeg)">
+                style="background-image: url(./../../../../assets/images/services/machine-modification.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    Existing Product Modification
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    Machine Modification
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
                 style="background-image: url(./../../../../assets/images/services/metal-milling.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    CNC Machine & Machine Fabrication
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    Injection Mould Design & Fabrication
+                </div>
+            </div>
+            <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
+                style="background-image: url(./../../../../assets/images/services/product-modification.jpeg)">
+                <div
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    Product Modification & Prototyping
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
                 style="background-image: url(./../../../../assets/images/services/plastic-injection.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    Plastic Injection Moduling
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    Reverse Engineering
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
-                style="background-image: url(./../../../../assets/images/services/pcb-printing.jpeg)">
+                style="background-image: url(./../../../../assets/images/services/3d-printing.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
-                    Electrical System Design & PCB Printing
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
+                    3D Printing
                 </div>
             </div>
             <div class="w-72 h-72 lg:w-52 lg:h-52 bg-theme-gray m-2 bg-cover bg-no-repeat bg-center"
                 style="background-image: url(./../../../../assets/images/services/compliance-documentation.jpeg)">
                 <div
-                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 cursor-pointer p-3 text-lg text-white text-center poppins-500">
+                    class="flex items-center justify-center w-72 h-72 lg:w-52 lg:h-52 bg-black/60 opacity-1 transition duration-300 p-3 text-lg text-white text-center poppins-500">
                     Compliance Documentation
                 </div>
             </div>
         </div>
         <div class="text-center">
             <a [routerLink]="'services'" mat-stroked-button class="flex flex-row items-center justify-center font-blue poppins-600">
-                Our Services<mat-icon class=" ml-3">trending_flat</mat-icon>
+                Our Services<mat-icon class="ml-3">trending_flat</mat-icon>
             </a>
         </div>
     </div>
