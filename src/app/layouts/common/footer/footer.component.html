@@ -1,19 +1,17 @@
 <div class="flex flex-row justify-center p-7 lg:px-28 bg-theme-black">
     <div class="w-full lg:w-2/3 lg:max-w-2/3">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-16 py-4 text-xs">
+        <div class="grid grid-cols-1 lg:grid-cols-6 gap-5 lg:gap-16 py-4 text-xs">
             <div class="col-span-2">
                 <div class="text-gray-500 poppins-600 mb-4 uppercase">Services</div>
                 <div class="text-gray-300 poppins-400">
                     <ul>
-                        <li>Product Design, Prototype & Manufacture</li>
-                        <li>3D Printing Solutions</li>
-                        <li>3D Modeling & Drawing</li>
-                        <li>Existing Product Modification</li>
-                        <li>CNC Machine & Machine Fabrication</li>
-                        <li>Plastic Injection Moduling</li>
-                        <li>Electrical System Design & PCB Printing</li>
-                        <li>Compliance Documentation</li>
-                        <li>Sustainable Packaging</li>
+                        <li><a [routerLink]="'services'">Custom Machinery Design & Manufacturing</a></li>
+                        <li><a [routerLink]="'services'">CAD/CAM Designing & Simulations</a></li>
+                        <li><a [routerLink]="'services'">Machine Modification</a></li>
+                        <li><a [routerLink]="'services'">Injection Mould Design & Fabrication</a></li>
+                        <li><a [routerLink]="'services'">Reverse Engineering</a></li>
+                        <li><a [routerLink]="'services'">3D Printing</a></li>
+                        <li><a [routerLink]="'services'">Compliance Documentation</a></li>
                     </ul>
                 </div>
             </div>
@@ -24,13 +22,13 @@
                         <li><a [routerLink]="'store'">Store</a></li>
                         <li><a [routerLink]="'services'">Services</a></li>
                         <li><a [routerLink]="'outsource'">Outsource</a></li>
-                        <li><a [routerLink]="'careers'">Careers</a></li>
+                        <li><a href="https://forms.gle/ohXruXq3RtSx23u46" target="_blank">Careers</a></li>
                         <li><a [routerLink]="'about'">About</a></li>
                         <li><a [routerLink]="'contact'">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="relative">
+            <div>
                 <div class="text-gray-500 poppins-600 mb-4 uppercase">Important Links</div>
                 <div class="text-gray-300 poppins-400">
                     <ul>
@@ -40,10 +38,20 @@
                         <li><a [routerLink]="'magazine'">Magazine</a></li>
                     </ul>
                 </div>
-                <div class="absolute bottom-0 text-gray-400">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+            </div>
+            <div class="col-span-2">
+                <div class="flex flex-row justify-center text-gray-400 mb-8">
+                    <div class="basis-3/4 md:basic-1/2 lg:basis-2/3 rounded-lg overflow-hidden">
+                        <div class="text-gray-300 poppins-500 text-center">Licensed by</div>
+                        <div class="p-2">
+                            <img class="w-full" src="../../../../assets/images/logo/ds.png" alt="Dassault Systemes">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-gray-400 text-center">
+                    <a href="https://www.linkedin.com/company/c-s-innovations" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-linkedin fa-2xl mr-4"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i
+                    <a href="https://www.instagram.com/csinnos" target="_blank" rel="noopener noreferrer"><i
                             class="fa-brands fa-instagram-square fa-2xl"></i></a>
                 </div>
             </div>

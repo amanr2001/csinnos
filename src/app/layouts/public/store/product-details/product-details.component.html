@@ -25,10 +25,24 @@
                     </div>
                 </div>
                 <div>
-                    <span class="poppins-500 text-gray-600">Description:</span>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid consectetur alias rem optio, adipisci nisi vero libero impedit. Praesentium, nisi. Beatae eaque deserunt quisquam. Earum commodi neque id at!
-                    </p>
+                    <div *ngIf="product.description.detail">
+                        <span class="poppins-500 text-gray-600">Description:</span>
+                        <p class="pl-4">
+                            {{product.description.detail}}
+                        </p>
+                    </div>
+                    <div class="my-3" *ngIf="product.description.characs.length > 0">
+                        <span class="poppins-500 text-gray-600">Characteristics</span>
+                        <ul class="pl-4">
+                            <li *ngFor="let charac of product.description.characs">{{charac}}</li>
+                        </ul>
+                    </div>
+                    <div *ngIf="product.description.specs.length > 0">
+                        <span class="poppins-500 text-gray-600">Specifications</span>
+                        <ul class="pl-4">
+                            <li *ngFor="let spec of product.description.specs">{{spec}}</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="mt-8 text-center w-full">
                     <button class="flex flex-row items-center justify-center text-white poppins-500 px-12 py-3 w-full rounded-md bg-theme-blue hover:bg-black transition">

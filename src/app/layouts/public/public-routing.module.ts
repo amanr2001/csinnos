@@ -19,7 +19,7 @@ const publicRoutes: Routes = [
   { path: 'services', component: OurServicesComponent },
   { path: 'outsource', component: OutsourceComponent },
   { path: 'outsource', component: OutsourceComponent },
-  { path: 'careers', component: CareersComponent },
+  { path: 'brands', component: CareersComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'cart', component: ShoppingCartComponent },

@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "category": "Machinery",
+        "name": "Coffee capsule filling and sealing machine",
+        "price": 14000.00,
+        "productImg": "./../../../../../assets/images/store/product-1.webp",
+        "description" : {
+            "characs" : [
+                "Horizontal machine design easy maintenance",
+                "Stable simple design",
+                "Easy operation",
+                "Pre-made lid",
+                "Auto cup feeder",
+                "High fill accuracy",
+                "Adjustable auger height",
+                "Easy installation",
+                "Nitrogen Flushing"
+            ],
+            "specs": [
+                "Throughput: 850 - 950 capsules per hour",
+                "Max power: 550W",
+                "Capacity: 3.5L",
+                "Max. foot print: 720mm x 1000mm",
+                "Height: 700mm",
+                "Net Weight: 95kg"
+            ],
+            "detail": ""
+        }
+    },
+    {
+        "id": 2,
+        "category": "Hinges & Litches",
+        "name": "HINGE SIDE MOUNT (M)--AS013-000-000M",
+        "price": 48.00,
+        "productImg": "./../../../../../assets/images/store/product-2.webp",
+        "description" : {
+            "characs" : [],
+            "specs": [
+                "Material: Aluminium Alloy",
+                "Finish: Powder Coat/ Polished Aluminium",
+                "Colour: Black/White/Silver",
+                "Thread or Hole Type: M5 (countersunk clearance hole)",
+                "Mounting Style: Concealed Mount",
+                "Hinge Style: Lift-Off Hinge"
+            ],
+            "detail": "These hinges allow doors to be removed quickly, easily and safely without the use of tools. The non lift-off configuration allows permanent installation. Hinges can be custimozed according to the clients' requirement. The powder coat or polished aluminium finish provides an enhanced application aesthetic as well."
+        }
+    },
+    {
+        "id": 3,
+        "category": "Hinges & Litches",
+        "name": "HINGE SIDE MOUNT (A)--AS013-000-000A",
+        "price": 48.00,
+        "productImg": "./../../../../../assets/images/store/product-3.webp",
+        "description" : {
+            "characs" : [],
+            "specs": [],
+            "detail": "These hinges allow doors to be removed quickly, easily and safely without the use of tools. The non lift-off configuration allows permanent installation. Hinges can be custimozed according to the clients' requirement. The powder coat or polished aluminium finish provides an enhanced application aesthetic as well."
+        }
+    },
+    {
+        "id": 4,
+        "category": "Safety",
+        "name": "Fire Exit Board",
+        "price": 45.00,
+        "productImg": "./../../../../../assets/images/store/product-4.webp",
+        "description" : {
+            "characs" : [],
+            "specs": [],
+            "detail": "An exit sign is a device in a public facility denoting the location of the closest emergency exit in case of fire or another emergency. These Exit signs are designed to be absolutely unmistakable and understandable to anyone."
+        }
+    },
+    {
+        "id": 5,
+        "category": "Safety",
+        "name": "Gas Discharged LED Warning Light Board",
+        "price": 45.00,
+        "productImg": "./../../../../../assets/images/store/product-5.webp",
+        "description" : {
+            "characs" : [],
+            "specs": [],
+            "detail": "Gas Discharged LED Warning Light Boards use with gaseous protection systems. The LED design provides for low current consumption with maximum brightness."
+        }
+    },
+    {
+        "id": 6,
+        "category": "Safety",
+        "name": "LED Warning Lamp",
+        "price": 100.00,
+        "productImg": "./../../../../../assets/images/store/product-6.webp",
+        "description" : {
+            "characs" : [],
+            "specs": [],
+            "detail": "'Dangerous atmosphere' LED warning signboards are installed at the fewer ventilation spaces such as parking garages or the basements where vehicles and machines could generate gases that can be toxic. Exceeding safe concentrations of these gases can put anyone at risk. These warning light boards alert the people and protect lives."
+        }
+    }
+]

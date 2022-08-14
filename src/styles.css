@@ -52,6 +52,7 @@
   --blue: #3965af;
   --dark-blue: #2b5295;
   --light-blue: #b6d8f5;
+  --lighter-blue: #daeeff;
   --gray: #6c7b85;
   --white: #ffffff;
   --black: #181616;
@@ -92,6 +93,9 @@ body {
 }
 .bg-light-blue {
   background-color: var(--light-blue);
+}
+.bg-lighter-blue {
+  background-color: var(--lighter-blue);
 }
 .bg-theme-gray {
   background-color: var(--gray);
