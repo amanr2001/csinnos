@@ -1,8 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import './../../../../assets/js/smtp.js'
-declare let Email: any;
 
 @Component({
   selector: 'app-contact-us',
