@@ -26,6 +26,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ProductQuickViewComponent } from './store/product-quick-view/product-quick-view.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ProductDetailsComponent } from './store/product-details/product-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -45,6 +46,8 @@ import { ProductDetailsComponent } from './store/product-details/product-details
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     PublicRoutingModule,
     MatIconModule,
     MatButtonModule,

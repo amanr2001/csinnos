@@ -1,4 +1,5 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconModule } from '@angular/material/icon';
@@ -32,7 +33,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatNativeDateModule,
     MatMenuModule,
     PdfViewerModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     CommonModule,
@@ -49,7 +52,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatNativeDateModule,
     MatMenuModule,
     PdfViewerModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
