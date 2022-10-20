@@ -27,10 +27,13 @@ export class ContactUsComponent implements OnInit {
   onSubmit(): void {
     const inquery = this.inquiryForm.value;
 
-    this.httpClient.post('https://formsubmit.co/ceec228a6105376b5931736905799296', inquery).subscribe((res) => {
-      console.log("Submitted successfully", res);
+    this.httpClient.post('https://formsubmit.co/info@csinnos.com', inquery).subscribe((res) => {
+      console.log('Submitted successfully.', res);
+      alert('Inquiry submitted successfully.');
+      this.inquiryForm.reset();
     }, (err) => {
-      console.log(err);
+      console.log('Submission failed.', err);
+      alert('Inquiry submission failed! Please try again shortly.');
     });
   }
 
